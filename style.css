@@ -1,0 +1,69 @@
+/* CSS Variables */
+:root {
+    --Primary: seagreen;
+    --dark: #1b2431;
+    --darkDark: #0e1422;
+    --light: #F3F4F6;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fari sans', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.watch {
+    background-color: var(--darkDark);
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;    
+
+    color: var(--light);
+    font-size: 1.125rem;
+    background-color: var(--Primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    transition: 0.5s;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+button:active {
+    background-color: var(--dark);
+}
+
+
